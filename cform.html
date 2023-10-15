@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="cform.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact With Us</h1>
+        <p>We are glad to see you here. We will definately reach you soon <br>to connect with us. May this will be your great experience.</p>
+
+        <div class="contactbox">
+            <div class="left">
+                <h3>Send Your Information</h3>
+                <form >
+                    <div class="row">
+                        <div class="grp">
+                            <label >Name</label>
+                            <input type="text" placeholder="Enter your name" required oninvalid="this.setCustomValidity('Please Enter your Name')">
+                        </div>
+                        <div class="grp">
+                            <label >Phone No.</label>
+                            <input type="tel" placeholder="Enter your phone number" required max="10" pattern="['0-9']{10}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="grp">
+                            <label >Email</label>
+                            <input type="email" placeholder="Enter your Email Id" required oninvalid="this.setCustomValidity('Please Enter Valid Email')">
+                        </div>
+                        <div class="grp">
+                            <label >Subject</label>
+                            <input type="text" placeholder="Enter Subject">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Enter your message here" maxlength="200"></textarea>
+
+                    <button type="submit" onclick="submit()">Send</button>
+
+                </form>
+
+                
+
+
+            </div>
+            <div class="right">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>coder@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Contact No.</td>
+                        <td>+1 324 345 3020</td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td>www.coder@02.com</td>
+                    </tr>
+                    <tr>
+                        <td>Social Link</td>
+                        <td>http://coder@02</td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<script>
+    function submit(){
+        window.open("csubmit.html");
+    }
+</script>
